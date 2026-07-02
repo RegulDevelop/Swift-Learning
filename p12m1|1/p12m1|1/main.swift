@@ -146,33 +146,27 @@ let count = 10
 
 // Задание 1
 
-var numberCheck: Int = 0
-
 print("Введите число:")
 
 if let input = readLine(), let number = Int(input) {
-    numberCheck = number
 
-    if numberCheck > 0 {
-        print("Число \(numberCheck) положительное.")
-    } else if numberCheck == 0 {
-        print("Это \(numberCheck).")
+    if number > 0 {
+        print("Число \(number) положительное.")
+    } else if number == 0 {
+        print("Это \(number).")
     } else {
-        print("Число \(numberCheck) отрицательное.")
+        print("Число \(number) отрицательное.")
     }
     
 }
 
 // Задание 2
 
-var userAge: Int = 0
-
 print("Введите возраст:")
 
 if let input = readLine(), let age = Int(input) {
-    userAge = age
     
-    if userAge >= 18 {
+    if age >= 18 {
         print("Доступ разрешен")
     } else {
         print("Доступ запрещен")
